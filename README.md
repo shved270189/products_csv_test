@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CSV path is set in `config/secrets.yml`
 
-Things you may want to cover:
+Ruby version 2.3.0
 
-* Ruby version
+For cron task I used `gem 'whenever'` (`config/schedule.rb`)
 
-* System dependencies
+API Path is `GET /products`. You can send HTTP parameters such as `page`, `per_page` and `producer`. Without `producer` parameter you will get in response all products by pagination.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+For tests I used `rspec` (`spec/` directory).
